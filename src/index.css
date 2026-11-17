@@ -2,8 +2,143 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════════════════════
+   BASE STYLES — Siteworthy Brand System
+   ═══════════════════════════════════════════════════════ */
+
 @layer base {
+  /* ── Smooth Scroll & Reduced Motion ─────────────── */
   html {
     scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ── Global Reset & Typography ──────────────────── */
+  body {
+    @apply bg-brand-white text-brand-navy font-body antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-extrabold text-brand-navy;
+  }
+
+  h1 {
+    @apply text-display;
+  }
+  h2 {
+    @apply text-headline;
+  }
+  h3 {
+    @apply text-title;
+  }
+
+  p {
+    @apply text-body leading-relaxed;
+    color: #475569; /* slate-600 — lebih lembut dari navy untuk body text */
+  }
+
+  a {
+    @apply text-brand-blue transition-colors;
+  }
+  a:hover {
+    @apply text-blue-700;
+  }
+
+  /* ── Focus Visible (Aksesibilitas) ──────────────── */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-blue rounded-sm;
+  }
+
+  /* ── Selection ──────────────────────────────────── */
+  ::selection {
+    @apply bg-brand-blue text-white;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   COMPONENT STYLES
+   ═══════════════════════════════════════════════════════ */
+
+@layer components {
+  /* ── Section Container ──────────────────────────── */
+  .section {
+    @apply py-section px-6 md:px-8 lg:px-12;
+  }
+  .section-sm {
+    @apply py-section-sm px-6 md:px-8;
+  }
+  .section-inner {
+    @apply max-w-site mx-auto;
+  }
+
+  /* ── Section Header ─────────────────────────────── */
+  .section-label {
+    @apply text-small font-semibold tracking-wider uppercase text-brand-blue mb-3;
+  }
+  .section-title {
+    @apply text-headline font-heading font-extrabold text-brand-navy mb-4;
+  }
+  .section-desc {
+    @apply text-body-lg max-w-2xl mx-auto;
+    color: #475569;
+  }
+
+  /* ── Tombol Utama (Primary CTA) ─────────────────── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-brand-blue text-white font-semibold font-body
+           px-6 py-3 rounded-btn
+           hover:bg-blue-700 active:bg-blue-800
+           transition-colors
+           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
+  }
+
+  /* ── Tombol Sekunder (Secondary / Outline) ──────── */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent text-brand-navy font-semibold font-body
+           px-6 py-3 rounded-btn
+           border border-brand-navy/20
+           hover:border-brand-navy hover:bg-brand-gray
+           active:bg-gray-100
+           transition-colors
+           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
+  }
+
+  /* ── Card ────────────────────────────────────────── */
+  .card {
+    @apply bg-white rounded-card shadow-card
+           transition-shadow
+           hover:shadow-card-hover;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   UTILITY STYLES
+   ═══════════════════════════════════════════════════════ */
+
+@layer utilities {
+  /* ── Gradient Teks Brand (sparingly used) ────────── */
+  .text-gradient-brand {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-blue-600;
   }
 }
