@@ -2,17 +2,95 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Siteworthy - Freelance Web Development Studio di Semarang. Kami membuat website modern, profesional, dan mudah diakses untuk membantu pertumbuhan bisnis UMKM." />
-    <title>Siteworthy | Freelance Web Development Studio</title>
-    
-    <!-- Google Fonts: Manrope (ExtraBold/Bold) & Inter (Regular/SemiBold) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Primary SEO Title & Meta -->
+    <title>Siteworthy | Freelance Web Development Studio Semarang</title>
+    <meta name="title" content="Siteworthy | Freelance Web Development Studio Semarang" />
+    <meta
+      name="description"
+      content="Jasa pembuatan website modern, cepat, dan terjangkau untuk pelaku UMKM di Semarang. Bangun kehadiran digital yang profesional dan dipercaya pelanggan bersama Siteworthy."
+    />
+    <meta
+      name="keywords"
+      content="jasa pembuatan website semarang, web development semarang, website umkm semarang, landing page semarang, company profile website semarang, freelance web developer semarang, siteworthy"
+    />
+    <meta name="author" content="Siteworthy Studio" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://username.github.io/siteworthy/" />
+    <meta property="og:site_name" content="Siteworthy" />
+    <meta property="og:title" content="Siteworthy | Freelance Web Development Studio Semarang" />
+    <meta
+      property="og:description"
+      content="Your Business Deserves a Better Website. Jasa pembuatan website modern, cepat, dan terjangkau khusus untuk bisnis lokal & UMKM di Semarang."
+    />
+    <meta property="og:image" content="./logo.png" />
+    <meta property="og:image:alt" content="Logo Siteworthy - Studio Web Development Semarang" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://username.github.io/siteworthy/" />
+    <meta name="twitter:title" content="Siteworthy | Freelance Web Development Studio Semarang" />
+    <meta
+      name="twitter:description"
+      content="Jasa pembuatan website modern, responsif, dan terjangkau untuk pelaku UMKM di Semarang."
+    />
+    <meta name="twitter:image" content="./logo.png" />
+
+    <!-- Google Fonts: Manrope (Headings) & Inter (Body & Buttons) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data: JSON-LD (Schema.org ProfessionalService & LocalBusiness) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Siteworthy",
+        "alternateName": "Siteworthy Web Development Studio",
+        "url": "https://username.github.io/siteworthy/",
+        "logo": "https://username.github.io/siteworthy/logo.png",
+        "image": "https://username.github.io/siteworthy/logo.png",
+        "description": "Freelance Web Development Studio di Semarang yang membantu pelaku UMKM membangun website profesional, modern, dan mudah diakses.",
+        "telephone": "+6281225005978",
+        "email": "josh.app76@gmail.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Semarang",
+          "addressRegion": "Jawa Tengah",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.966667,
+          "longitude": 110.416664
+        },
+        "sameAs": ["https://instagram.com/joshua.as_"],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      }
+    </script>
   </head>
-  <body class="bg-brand-white text-brand-navy font-body antialiased selection:bg-brand-blue selection:text-white">
+  <body
+    class="bg-brand-white text-brand-navy font-body antialiased selection:bg-brand-blue selection:text-white"
+  >
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
   </body>
