@@ -1,0 +1,47 @@
+[
+  {
+    "id": "project-1",
+    "name": "Warung Makan Sejahtera",
+    "category": "Business Website",
+    "description": "Website operasional untuk rumah makan lokal di Semarang dengan integrasi menu digital, lokasi Google Maps, dan tombol pemesanan WhatsApp.",
+    "features": [
+      "Menu Digital Interaktif",
+      "Pemesanan Cepat via WhatsApp",
+      "Peta Lokasi Google Maps",
+      "Desain Responsif Mobile-First"
+    ],
+    "image": "/placeholder-project-1.svg",
+    "demoUrl": "#",
+    "status": "placeholder"
+  },
+  {
+    "id": "project-2",
+    "name": "Batik Tradisi Semarang",
+    "category": "Company Profile Website",
+    "description": "Company profile elegan untuk produsen kerajinan batik lokal yang menampilkan cerita brand, katalog motif unggulan, dan kanal kemitraan bisnis.",
+    "features": [
+      "Showcase Galeri Produk",
+      "Brand Storytelling",
+      "Katalog Digital Terstruktur",
+      "Kontak Kemitraan Langsung"
+    ],
+    "image": "/placeholder-project-2.svg",
+    "demoUrl": "#",
+    "status": "placeholder"
+  },
+  {
+    "id": "project-3",
+    "name": "Klinik Pratama Sehat Bersama",
+    "category": "Landing Page",
+    "description": "Landing page informatif yang memudahkan pasien menemukan jadwal praktik dokter, layanan medis unggulan, dan pendaftaran konsultasi online.",
+    "features": [
+      "Jadwal Praktik Dokter Terkini",
+      "Daftar Layanan Medis Jelas",
+      "Tombol Pendaftaran Cepat",
+      "Informasi Fasilitas & Tarif"
+    ],
+    "image": "/placeholder-project-3.svg",
+    "demoUrl": "#",
+    "status": "placeholder"
+  }
+]

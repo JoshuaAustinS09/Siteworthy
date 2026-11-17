@@ -1,8 +1,10 @@
 import { ExternalLink, Layers, Sparkles } from "lucide-react";
-import { portfolioData, PortfolioProject } from "../data/portfolio";
+import { usePortfolio } from "../hooks/usePortfolio";
 import { contactConfig } from "../data/contact";
 
 export default function Portfolio() {
+  const { projects } = usePortfolio();
+
   return (
     <section
       id="portfolio"
@@ -22,9 +24,9 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* ── Portfolio Grid ─────────────────────────────── */}
+        {/* ── Portfolio Grid (Dimuat melalui hook usePortfolio) ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfolioData.map((project: PortfolioProject) => (
+          {projects.map((project) => (
             <article
               key={project.id}
               className="bg-white rounded-card border border-slate-200/90 shadow-card hover:shadow-card-hover transition-all duration-200 overflow-hidden flex flex-col justify-between group"

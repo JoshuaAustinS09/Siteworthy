@@ -43,7 +43,8 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-heading font-bold text-white mb-2">WhatsApp</h3>
               <p className="text-small text-slate-300 leading-relaxed mb-4">
-                Diskusikan langsung kebutuhan website bisnis Anda via chat WhatsApp santai.
+                Diskusikan langsung kebutuhan website bisnis Anda via WhatsApp di{" "}
+                <span className="text-white font-medium">{contactConfig.whatsapp.display}</span>.
               </p>
             </div>
             <div className="inline-flex items-center gap-2 text-small font-semibold text-emerald-300 group-hover:text-emerald-200 pt-2 border-t border-white/10">

@@ -309,9 +309,9 @@ Jangan mengasumsikan username GitHub. Buat konfigurasi yang mudah diperbarui.
 Seluruh informasi kontak harus dikelola melalui satu file konfigurasi.
 
 Informasi yang dibutuhkan:
-- WhatsApp number.
-- Business email.
-- Instagram URL.
+- WhatsApp number : 081225005978
+- Business email : josh.app76@gmail.com
+- Instagram URL : joshua.as_
 
 Ketentuan:
 - WhatsApp menggunakan direct chat link.
