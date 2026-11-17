@@ -130,8 +130,8 @@ Untuk setiap komponen:
 - [x] Repo di‑inisialisasi dan dipush ke GitHub (Scaffold M1 selesai).
 - [x] Gaya brand telah diterapkan (M2 selesai).
 - [x] Layout & Navigasi responsif telah diterapkan (M3 selesai).
-- [ ] Semua enam section selesai dan responsif.
-- [ ] Sumber data portofolio berfungsi.
+- [x] Semua enam section selesai dan responsif (M4 selesai).
+- [x] Sumber data portofolio terpisah & berfungsi (M5 selesai).
 - [ ] Tag meta SEO tersedia.
 - [ ] Gambar telah dioptimasi dan lazy‑load.
 - [ ] Unit & E2E test lulus.

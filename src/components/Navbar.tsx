@@ -59,18 +59,15 @@ export default function Navbar() {
   }, [isOpen]);
 
   /* ── Smooth scroll helper ──────────────────────────────── */
-  const handleNavClick = useCallback(
-    (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-      e.preventDefault();
-      setIsOpen(false);
-      const targetElement = document.getElementById(id);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth" });
-        window.history.pushState(null, "", `#${id}`);
-      }
-    },
-    []
-  );
+  const handleNavClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${id}`);
+    }
+  }, []);
 
   return (
     <header
@@ -197,9 +194,7 @@ export default function Navbar() {
                         }`}
                       >
                         <span>{item.label}</span>
-                        {isActive && (
-                          <span className="w-2 h-2 rounded-full bg-brand-blue" />
-                        )}
+                        {isActive && <span className="w-2 h-2 rounded-full bg-brand-blue" />}
                       </a>
                     </li>
                   );

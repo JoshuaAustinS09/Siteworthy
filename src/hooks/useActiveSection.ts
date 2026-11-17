@@ -28,10 +28,7 @@ export function useActiveSection(sectionIds: string[]) {
           setActiveSection(sectionIds[0] || "");
           return;
         }
-        if (
-          window.innerHeight + window.scrollY >=
-          document.documentElement.scrollHeight - 50
-        ) {
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
           setActiveSection(sectionIds[sectionIds.length - 1] || "");
           return;
         }

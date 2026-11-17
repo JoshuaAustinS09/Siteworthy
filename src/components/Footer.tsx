@@ -5,10 +5,7 @@ import { NAV_ITEMS } from "./Navbar";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    id: string
-  ) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     const targetElement = document.getElementById(id);
     if (targetElement) {
@@ -38,8 +35,8 @@ export default function Footer() {
               />
             </a>
             <p className="text-small text-slate-300 max-w-sm leading-relaxed">
-              Freelance Web Development Studio yang berbasis di Semarang. Membantu
-              pelaku UMKM menghadirkan website yang profesional, cepat, dan mudah diakses.
+              Freelance Web Development Studio yang berbasis di Semarang. Membantu pelaku UMKM
+              menghadirkan website yang profesional, cepat, dan mudah diakses.
             </p>
             <div className="text-xs text-slate-400 font-medium">
               📍 Semarang, Jawa Tengah, Indonesia
@@ -99,8 +96,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-slate-300 hover:text-white flex items-center gap-2 transition-colors"
                 >
-                  <span className="w-2 h-2 rounded-full bg-pink-400" />
-                  @{contactConfig.instagram.handle}
+                  <span className="w-2 h-2 rounded-full bg-pink-400" />@
+                  {contactConfig.instagram.handle}
                 </a>
               </li>
             </ul>
@@ -109,12 +106,8 @@ export default function Footer() {
 
         {/* ── Copyright & Bottom bar ─────────────────────── */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <p className="!text-slate-400">
-            © {currentYear} Siteworthy. All rights reserved.
-          </p>
-          <p className="!text-slate-400">
-            Your Business Deserves a Better Website.
-          </p>
+          <p className="!text-slate-400">© {currentYear} Siteworthy. All rights reserved.</p>
+          <p className="!text-slate-400">Your Business Deserves a Better Website.</p>
         </div>
       </div>
     </footer>
