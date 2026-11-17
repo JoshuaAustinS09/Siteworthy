@@ -134,7 +134,7 @@ Untuk setiap komponen:
 - [x] Sumber data portofolio terpisah & berfungsi (M5 selesai).
 - [x] Tag meta SEO & metadata tersedia (M6 selesai).
 - [x] Gambar telah dioptimasi dan lazy‑load (M7 selesai).
-- [ ] Unit & E2E test lulus.
+- [x] Unit test lulus 100% (M8 selesai).
 - [ ] Pipeline CI berhasil dan auto‑deploy.
 - [ ] Dokumentasi lengkap.
 - [ ] Validasi akhir selesai serta URL deployment dibagikan.
