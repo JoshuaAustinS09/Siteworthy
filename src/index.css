@@ -10,6 +10,7 @@
   /* ── Smooth Scroll & Reduced Motion ─────────────── */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 72px;
   }
   @media (prefers-reduced-motion: reduce) {
     html {
