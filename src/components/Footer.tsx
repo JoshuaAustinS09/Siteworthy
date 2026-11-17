@@ -32,6 +32,8 @@ export default function Footer() {
                 className="h-10 w-auto object-contain brightness-0 invert"
                 width="160"
                 height="40"
+                loading="lazy"
+                decoding="async"
               />
             </a>
             <p className="text-small text-slate-300 max-w-sm leading-relaxed">

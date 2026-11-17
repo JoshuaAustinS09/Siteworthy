@@ -133,7 +133,7 @@ Untuk setiap komponen:
 - [x] Semua enam section selesai dan responsif (M4 selesai).
 - [x] Sumber data portofolio terpisah & berfungsi (M5 selesai).
 - [x] Tag meta SEO & metadata tersedia (M6 selesai).
-- [ ] Gambar telah dioptimasi dan lazy‑load.
+- [x] Gambar telah dioptimasi dan lazy‑load (M7 selesai).
 - [ ] Unit & E2E test lulus.
 - [ ] Pipeline CI berhasil dan auto‑deploy.
 - [ ] Dokumentasi lengkap.

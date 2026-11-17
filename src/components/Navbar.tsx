@@ -96,6 +96,7 @@ export default function Navbar() {
               className="h-9 md:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
               width="160"
               height="40"
+              decoding="async"
             />
           </a>
 
