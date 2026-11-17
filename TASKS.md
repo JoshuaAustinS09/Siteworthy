@@ -127,7 +127,7 @@ Untuk setiap komponen:
 ---
 
 ## ✅ Checklist Penyelesaian (untuk tim)
-- [ ] Repo di‑inisialisasi dan dipush ke GitHub.
+- [x] Repo di‑inisialisasi dan dipush ke GitHub (Scaffold M1 selesai).
 - [ ] Gaya brand telah diterapkan.
 - [ ] Semua enam section selesai dan responsif.
 - [ ] Sumber data portofolio berfungsi.
