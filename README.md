@@ -1,6 +1,6 @@
 # Siteworthy – Portfolio Website
 
-[![Deploy to GitHub Pages](https://github.com/USERNAME/siteworthy/actions/workflows/deploy.yml/badge.svg)](https://github.com/USERNAME/siteworthy/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/JoshuaAustinS09/Siteworthy/actions/workflows/deploy.yml/badge.svg)](https://github.com/JoshuaAustinS09/Siteworthy/actions/workflows/deploy.yml)
 
 > **"Your Business Deserves a Better Website."**  
 > Siteworthy adalah freelance web development studio berbasis di Semarang, Indonesia yang berfokus membantu pelaku UMKM membangun kehadiran digital yang profesional, modern, dan mudah diakses.
@@ -17,7 +17,7 @@ Website ini adalah **Single Page Website** profesional yang dirancang untuk:
 | Item | Detail |
 |------|--------|
 | **Target Klien** | Pelaku UMKM di Semarang & sekitarnya |
-| **Hosting** | GitHub Pages – `https://<USERNAME>.github.io/siteworthy/` |
+| **Hosting** | GitHub Pages – `https://joshuaaustins09.github.io/Siteworthy/` |
 | **Arsitektur** | Static SPA – Vite + React + TypeScript + Tailwind CSS |
 | **Bahasa Konten** | Bahasa Indonesia |
 
@@ -53,7 +53,7 @@ Website ini adalah **Single Page Website** profesional yang dirancang untuk:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/USERNAME/siteworthy.git
+git clone https://github.com/JoshuaAustinS09/Siteworthy.git
 cd siteworthy
 
 # 2. Install dependensi

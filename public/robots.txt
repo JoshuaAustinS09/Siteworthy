@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://username.github.io/siteworthy/sitemap.xml
+Sitemap: https://joshuaaustins09.github.io/Siteworthy/sitemap.xml
