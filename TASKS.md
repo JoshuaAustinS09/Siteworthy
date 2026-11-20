@@ -137,7 +137,7 @@ Untuk setiap komponen:
 - [x] Unit test lulus 100% (M8 selesai).
 - [x] Pipeline CI berhasil dan auto‑deploy. (M9 selesai)
 - [x] Dokumentasi lengkap. (M10 selesai)
-- [ ] Validasi akhir selesai serta URL deployment dibagikan.
+- [x] Validasi akhir selesai serta URL deployment dibagikan. (M11 selesai)
 
 ---
 

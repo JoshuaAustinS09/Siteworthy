@@ -199,17 +199,28 @@ push to main
 
 ---
 
-## 🔧 Placeholder yang Perlu Diperbarui
+## 📋 Checklist Penyerahan Akhir (Handover)
 
-Sebelum deploy final, perbarui item-item berikut:
+Semua milestone (M1 – M11) telah selesai dan diverifikasi:
 
-| File | Lokasi | Yang Perlu Diubah |
-|------|--------|--------------------|
-| `README.md` | Badge URL + Clone URL | Ganti `USERNAME` dengan GitHub username aktual |
-| `public/sitemap.xml` | `<loc>` URL | Ganti `YOUR_USERNAME` dan `siteworthy` dengan nilai aktual |
-| `public/robots.txt` | `Sitemap:` URL | Sama seperti sitemap.xml |
-| `index.html` | `og:url` meta tag | URL website aktual |
-| `index.html` | JSON-LD `url` field | URL website aktual |
+- [x] **M1 – Scaffold & Tooling**: Vite + React 19 + TypeScript + Tailwind CSS 3
+- [x] **M2 – Brand & Design System**: Warna identitas `#0755E8`, `#101F38`, font Manrope & Inter
+- [x] **M3 – Layout & Navigasi**: Sticky Navbar, smooth scrolling, active section observer, mobile hamburger menu
+- [x] **M4 – Komponen 6 Section**: Hero, Services (4 kartu), Portfolio, Why Choose (4 poin), Process (5 langkah), Contact & Footer
+- [x] **M5 – Sistem Data Portofolio**: `src/data/portfolio.json` terpisah dengan custom hook `usePortfolio`
+- [x] **M6 – SEO & Metadata**: Meta tags, Open Graph, Twitter Cards, Schema.org JSON-LD `ProfessionalService`, `sitemap.xml`, `robots.txt`
+- [x] **M7 – Optimasi Performa**: Kompresi logo (952 KB → 110 KB), favicon (11.5 KB), lazy loading, Rollup code splitting
+- [x] **M8 – Pengujian**: 17 unit test lulus 100% menggunakan Vitest & React Testing Library
+- [x] **M9 – CI/CD Pipeline**: GitHub Actions auto-deploy ke branch `gh-pages` pada setiap push ke `main`
+- [x] **M10 – Dokumentasi**: Panduan lokal, struktur folder, cara update portofolio & kontak, serta `CONTRIBUTING.md`
+- [x] **M11 – Validasi Akhir**: Build produksi terverifikasi bebas error, URL live siap diakses
+
+---
+
+## 🌐 URL Deployment
+
+- **GitHub Pages:** [https://joshuaaustins09.github.io/Siteworthy/](https://joshuaaustins09.github.io/Siteworthy/)
+- **Repository:** [https://github.com/JoshuaAustinS09/Siteworthy](https://github.com/JoshuaAustinS09/Siteworthy)
 
 ---
 
