@@ -135,8 +135,8 @@ Untuk setiap komponen:
 - [x] Tag meta SEO & metadata tersedia (M6 selesai).
 - [x] Gambar telah dioptimasi dan lazy‑load (M7 selesai).
 - [x] Unit test lulus 100% (M8 selesai).
-- [ ] Pipeline CI berhasil dan auto‑deploy.
-- [ ] Dokumentasi lengkap.
+- [x] Pipeline CI berhasil dan auto‑deploy. (M9 selesai)
+- [x] Dokumentasi lengkap. (M10 selesai)
 - [ ] Validasi akhir selesai serta URL deployment dibagikan.
 
 ---

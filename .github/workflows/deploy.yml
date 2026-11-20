@@ -1,0 +1,57 @@
+name: CI / Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Izinkan workflow menulis ke repo (untuk gh-pages branch)
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    name: Lint → Test → Build → Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout source
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      # 3. Install dependencies (clean install dari package-lock.json)
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Lint – pastikan tidak ada error ESLint
+      - name: Run ESLint
+        run: npm run lint
+
+      # 5. Test – pastikan semua unit test lulus
+      - name: Run unit tests
+        run: npm run test
+
+      # 6. Build – hasilkan folder dist/
+      - name: Build production bundle
+        run: npm run build
+
+      # 7. Deploy dist/ ke branch gh-pages
+      - name: Deploy to GitHub Pages
+        # Hanya deploy saat push ke main (bukan PR)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          commit_message: "deploy: update from ${{ github.sha }}"
