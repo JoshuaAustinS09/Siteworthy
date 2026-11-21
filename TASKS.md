@@ -146,9 +146,9 @@ Untuk setiap komponen:
 Milestone ini ditujukan untuk meningkatkan daya tarik visual website agar lebih *eye-catching*, memikat, dan berkesan profesional tanpa melanggar batasan `PROJECT_BRIEF.md` (bebas AI-slop, tidak ada glassmorphism buram, tidak ada gradient berlebihan).
 
 ### **Tahap 1 – Hero Section Visual Glow-Up**
-- [ ] Tambahkan pola latar belakang *subtle tech grid/dots* (SVG motif halus dengan fade radial) untuk memberikan kedalaman (*depth*) pada Hero tanpa mengganggu keterbacaan teks.
-- [ ] Sempurnakan badge studio ("Berbasis Online") dengan *live status indicator* yang lebih berdimensi.
-- [ ] Tambahkan baris *floating feature chips* di bawah CTA Hero (mis. `⚡ 100% Cepat & Ringan`, `📱 Mobile-First Responsive`, `🔍 SEO Ready`, `💬 Direct Chat`).
+- [x] Tambahkan pola latar belakang *subtle tech grid/dots* (SVG motif halus dengan fade radial) untuk memberikan kedalaman (*depth*) pada Hero tanpa mengganggu keterbacaan teks.
+- [x] Sempurnakan badge studio ("Berbasis Online") dengan *live status indicator* yang lebih berdimensi.
+- [x] Tambahkan baris *floating feature chips* di bawah CTA Hero (mis. `⚡ 100% Cepat & Ringan`, `📱 Mobile-First Responsive`, `🔍 SEO Ready`, `💬 Direct Chat`).
 
 ### **Tahap 2 – Kedalaman Visual Kartu Layanan (Services)**
 - [ ] Tambahkan aksen visual interaktif pada 4 kartu layanan: *top-border highlight* saat hover, mikro-elevasi kartu (`hover:-translate-y-1.5`), dan efek transisi halus.
