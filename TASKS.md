@@ -141,4 +141,34 @@ Untuk setiap komponen:
 
 ---
 
+## 🎨 M12 – Peningkatan Visual & Desain Eye-Catching (Rencana Bertahap)
+
+Milestone ini ditujukan untuk meningkatkan daya tarik visual website agar lebih *eye-catching*, memikat, dan berkesan profesional tanpa melanggar batasan `PROJECT_BRIEF.md` (bebas AI-slop, tidak ada glassmorphism buram, tidak ada gradient berlebihan).
+
+### **Tahap 1 – Hero Section Visual Glow-Up**
+- [ ] Tambahkan pola latar belakang *subtle tech grid/dots* (SVG motif halus dengan fade radial) untuk memberikan kedalaman (*depth*) pada Hero tanpa mengganggu keterbacaan teks.
+- [ ] Sempurnakan badge studio ("Berbasis Online") dengan *live status indicator* yang lebih berdimensi.
+- [ ] Tambahkan baris *floating feature chips* di bawah CTA Hero (mis. `⚡ 100% Cepat & Ringan`, `📱 Mobile-First Responsive`, `🔍 SEO Ready`, `💬 Direct Chat`).
+
+### **Tahap 2 – Kedalaman Visual Kartu Layanan (Services)**
+- [ ] Tambahkan aksen visual interaktif pada 4 kartu layanan: *top-border highlight* saat hover, mikro-elevasi kartu (`hover:-translate-y-1.5`), dan efek transisi halus.
+- [ ] Tingkatkan styling badge kategori (UMKM & Operasional, Fokus Konversi, dll.) dengan aksen warna brand yang lebih kontras dan modern.
+- [ ] Perkuat penegasan visual pada daftar fitur dan *benefit box* klien.
+
+### **Tahap 3 – Realistisitas Mockup Portofolio**
+- [ ] Ubah preview placeholder kartu portofolio menjadi simulasi mini-browser / UI mockup yang lebih detail (wireframe mini dengan ilustrasi tata letak visual modern, bukan sekadar box abu-abu).
+- [ ] Tambahkan tag interaktif (mis. "Lihat Studi Kasus", pill teknologi mini: `React`, `Tailwind`, `WhatsApp API`).
+- [ ] Tambahkan efek *hover reveal* yang halus pada gambar preview.
+
+### **Tahap 4 – Timeline Proses & Micro-Interactions**
+- [ ] Berikan sentuhan aksen visual yang lebih menonjol pada timeline tahapan pengerjaan (nomor step `01`-`05` dengan typography aksen besar dan garis konektor vertikal/horizontal yang dinamis).
+- [ ] Tambahkan *active step hover state* yang memperjelas alur kerja dari Consultation hingga Launch.
+
+### **Tahap 5 – Polish Interaksi Global & Tombol**
+- [ ] Berikan efek hover dengan *subtle blue glow shadow* pada tombol CTA utama (`.btn-primary`).
+- [ ] Tambahkan animasi halus pada hamburger mobile menu dan transisi navbar scroll.
+- [ ] Verifikasi audit Lighthouse nilai 95+ untuk Performance, Accessibility, Best Practices, dan SEO.
+
+---
+
 *Silakan menyalin tugas‑tugas ini ke papan proyek Anda atau membuat issue GitHub secara langsung dari daftar.*

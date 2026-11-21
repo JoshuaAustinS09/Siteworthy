@@ -79,9 +79,9 @@ describe("Contact Component", () => {
 });
 
 describe("Footer Component", () => {
-  it("merender logo Siteworthy, informasi lokasi Semarang, dan copyright", () => {
+  it("merender logo Siteworthy, informasi layanan online, dan copyright", () => {
     render(<Footer />);
-    expect(screen.getByText(/Semarang, Jawa Tengah, Indonesia/i)).toBeInTheDocument();
+    expect(screen.getByText(/Layanan Berbasis Online/i)).toBeInTheDocument();
     expect(screen.getByText(/All rights reserved/i)).toBeInTheDocument();
   });
 });

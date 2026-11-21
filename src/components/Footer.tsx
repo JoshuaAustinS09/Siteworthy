@@ -37,11 +37,11 @@ export default function Footer() {
               />
             </a>
             <p className="text-small text-slate-300 max-w-sm leading-relaxed">
-              Freelance Web Development Studio yang berbasis di Semarang. Membantu pelaku UMKM
+              Freelance Web Development Studio berbasis online. Membantu pelaku UMKM
               menghadirkan website yang profesional, cepat, dan mudah diakses.
             </p>
             <div className="text-xs text-slate-400 font-medium">
-              📍 Semarang, Jawa Tengah, Indonesia
+              🌐 Layanan Berbasis Online • Melayani Seluruh Indonesia
             </div>
           </div>
 

@@ -120,7 +120,7 @@ export default function Portfolio() {
             </h4>
             <p className="text-small text-slate-600 max-w-xl">
               Kami dapat mendiskusikan rancangan tata letak website yang paling cocok untuk model
-              bisnis Anda di Semarang.
+              bisnis Anda.
             </p>
           </div>
           <a

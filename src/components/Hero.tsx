@@ -25,7 +25,7 @@ export default function Hero({ onExploreWork, onConsultation }: HeroProps) {
           <div className="inline-flex items-center gap-2 bg-brand-gray px-4 py-2 rounded-full border border-slate-200">
             <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse" />
             <span className="text-xs md:text-small font-semibold tracking-wide text-brand-navy">
-              Freelance Web Development Studio • Semarang
+              Freelance Web Development Studio • Berbasis Online
             </span>
           </div>
 
@@ -39,8 +39,8 @@ export default function Hero({ onExploreWork, onConsultation }: HeroProps) {
 
           {/* ── Deskripsi Pendukung ───────────────────────── */}
           <p className="text-body-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Siteworthy membantu pelaku usaha dan UMKM di Semarang membangun kehadiran digital yang
-            profesional, mudah diakses, dan meyakinkan bagi calon pelanggan.
+            Siteworthy membantu pelaku usaha dan UMKM membangun kehadiran digital yang profesional,
+            modern, dan meyakinkan bagi calon pelanggan di mana saja.
           </p>
 
           {/* ── CTA Buttons ───────────────────────────────── */}

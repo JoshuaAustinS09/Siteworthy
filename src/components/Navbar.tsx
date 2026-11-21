@@ -93,8 +93,8 @@ export default function Navbar() {
             <img
               src="./logo.png"
               alt="Logo Siteworthy"
-              className="h-9 md:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]"
-              width="160"
+              className="h-10 md:h-11 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+              width="210"
               height="40"
               decoding="async"
             />
