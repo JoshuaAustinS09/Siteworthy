@@ -151,9 +151,9 @@ Milestone ini ditujukan untuk meningkatkan daya tarik visual website agar lebih 
 - [x] Tambahkan baris *floating feature chips* di bawah CTA Hero (mis. `⚡ 100% Cepat & Ringan`, `📱 Mobile-First Responsive`, `🔍 SEO Ready`, `💬 Direct Chat`).
 
 ### **Tahap 2 – Kedalaman Visual Kartu Layanan (Services)**
-- [ ] Tambahkan aksen visual interaktif pada 4 kartu layanan: *top-border highlight* saat hover, mikro-elevasi kartu (`hover:-translate-y-1.5`), dan efek transisi halus.
-- [ ] Tingkatkan styling badge kategori (UMKM & Operasional, Fokus Konversi, dll.) dengan aksen warna brand yang lebih kontras dan modern.
-- [ ] Perkuat penegasan visual pada daftar fitur dan *benefit box* klien.
+- [x] Tambahkan aksen visual interaktif pada 4 kartu layanan: *top-border highlight* saat hover, mikro-elevasi kartu (`hover:-translate-y-1.5`), dan efek transisi halus.
+- [x] Tingkatkan styling badge kategori (UMKM & Operasional, Fokus Konversi, dll.) dengan aksen warna brand yang lebih kontras dan modern.
+- [x] Perkuat penegasan visual pada daftar fitur dan *benefit box* klien.
 
 ### **Tahap 3 – Realistisitas Mockup Portofolio**
 - [ ] Ubah preview placeholder kartu portofolio menjadi simulasi mini-browser / UI mockup yang lebih detail (wireframe mini dengan ilustrasi tata letak visual modern, bukan sekadar box abu-abu).
