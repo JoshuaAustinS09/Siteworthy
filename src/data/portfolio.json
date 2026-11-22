@@ -3,13 +3,14 @@
     "id": "project-1",
     "name": "Warung Makan Sejahtera",
     "category": "Business Website",
-    "description": "Website operasional untuk rumah makan lokal di Semarang dengan integrasi menu digital, lokasi Google Maps, dan tombol pemesanan WhatsApp.",
+    "description": "Website operasional untuk usaha kuliner dengan integrasi katalog menu digital, lokasi Google Maps, dan tombol pemesanan WhatsApp langsung.",
     "features": [
       "Menu Digital Interaktif",
       "Pemesanan Cepat via WhatsApp",
       "Peta Lokasi Google Maps",
       "Desain Responsif Mobile-First"
     ],
+    "techStack": ["React", "Tailwind CSS", "WhatsApp API", "Mobile-First"],
     "image": "/placeholder-project-1.svg",
     "demoUrl": "#",
     "status": "placeholder"
@@ -18,13 +19,14 @@
     "id": "project-2",
     "name": "Batik Tradisi Semarang",
     "category": "Company Profile Website",
-    "description": "Company profile elegan untuk produsen kerajinan batik lokal yang menampilkan cerita brand, katalog motif unggulan, dan kanal kemitraan bisnis.",
+    "description": "Company profile elegan untuk produsen kerajinan batik yang menampilkan cerita brand, katalog motif unggulan, dan kanal kemitraan bisnis resmi.",
     "features": [
       "Showcase Galeri Produk",
       "Brand Storytelling",
       "Katalog Digital Terstruktur",
       "Kontak Kemitraan Langsung"
     ],
+    "techStack": ["TypeScript", "Vite", "SEO Schema", "High-Res Gallery"],
     "image": "/placeholder-project-2.svg",
     "demoUrl": "#",
     "status": "placeholder"
@@ -40,6 +42,7 @@
       "Tombol Pendaftaran Cepat",
       "Informasi Fasilitas & Tarif"
     ],
+    "techStack": ["React", "Tailwind CSS", "Fast Load 95+", "Direct Booking"],
     "image": "/placeholder-project-3.svg",
     "demoUrl": "#",
     "status": "placeholder"

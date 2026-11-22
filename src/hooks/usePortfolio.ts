@@ -7,6 +7,7 @@ export interface PortfolioProject {
   category: string;
   description: string;
   features: string[];
+  techStack?: string[];
   image: string;
   demoUrl: string;
   status: "placeholder" | "live";

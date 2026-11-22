@@ -156,9 +156,9 @@ Milestone ini ditujukan untuk meningkatkan daya tarik visual website agar lebih 
 - [x] Perkuat penegasan visual pada daftar fitur dan *benefit box* klien.
 
 ### **Tahap 3 – Realistisitas Mockup Portofolio**
-- [ ] Ubah preview placeholder kartu portofolio menjadi simulasi mini-browser / UI mockup yang lebih detail (wireframe mini dengan ilustrasi tata letak visual modern, bukan sekadar box abu-abu).
-- [ ] Tambahkan tag interaktif (mis. "Lihat Studi Kasus", pill teknologi mini: `React`, `Tailwind`, `WhatsApp API`).
-- [ ] Tambahkan efek *hover reveal* yang halus pada gambar preview.
+- [x] Ubah preview placeholder kartu portofolio menjadi simulasi mini-browser / UI mockup yang lebih detail (wireframe mini dengan ilustrasi tata letak visual modern, bukan sekadar box abu-abu).
+- [x] Tambahkan tag interaktif (mis. "Lihat Studi Kasus", pill teknologi mini: `React`, `Tailwind`, `WhatsApp API`).
+- [x] Tambahkan efek *hover reveal* yang halus pada gambar preview.
 
 ### **Tahap 4 – Timeline Proses & Micro-Interactions**
 - [ ] Berikan sentuhan aksen visual yang lebih menonjol pada timeline tahapan pengerjaan (nomor step `01`-`05` dengan typography aksen besar dan garis konektor vertikal/horizontal yang dinamis).

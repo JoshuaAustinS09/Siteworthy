@@ -1,4 +1,13 @@
-import { ExternalLink, Layers, Sparkles } from "lucide-react";
+import {
+  ExternalLink,
+  Sparkles,
+  Lock,
+  ArrowRight,
+  Utensils,
+  Store,
+  Stethoscope,
+  Code2,
+} from "lucide-react";
 import { usePortfolio } from "../hooks/usePortfolio";
 import { contactConfig } from "../data/contact";
 
@@ -8,7 +17,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="section bg-white border-b border-slate-200/80"
+      className="section bg-white border-b border-slate-200/80 relative"
       aria-labelledby="portfolio-heading"
     >
       <div className="section-inner">
@@ -24,43 +33,107 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* ── Portfolio Grid (Dimuat melalui hook usePortfolio) ── */}
+        {/* ── Portfolio Grid ─────────────────────────────── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <article
               key={project.id}
-              className="bg-white rounded-card border border-slate-200/90 shadow-card hover:shadow-card-hover transition-all duration-200 overflow-hidden flex flex-col justify-between group"
+              className="bg-white rounded-card border border-slate-200/90 shadow-card hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between group"
             >
               <div>
-                {/* Visual Preview / Browser Mockup Placeholder */}
-                <div className="relative bg-brand-gray border-b border-slate-200 aspect-[16/10] flex flex-col justify-between p-4 group-hover:bg-slate-100 transition-colors">
-                  {/* Browser Window Header Dots */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1.5">
-                      <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-                      <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
+                {/* ── Visual Preview / Realistic Browser Window Mockup ── */}
+                <div className="relative bg-slate-100 border-b border-slate-200 aspect-[16/11] flex flex-col justify-between overflow-hidden">
+                  {/* Browser Window Header Chrome */}
+                  <div className="bg-slate-200/80 px-3.5 py-2.5 border-b border-slate-200 flex items-center justify-between gap-2 z-10">
+                    {/* Traffic Light Window Controls */}
+                    <div className="flex items-center gap-1.5 shrink-0" aria-hidden="true">
+                      <span className="w-2.5 h-2.5 rounded-full bg-rose-400 inline-block" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block" />
                     </div>
+
+                    {/* Simulated URL Bar */}
+                    <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white/90 border border-slate-200 text-[10px] text-slate-500 font-mono truncate max-w-[170px] shadow-2xs">
+                      <Lock className="w-2.5 h-2.5 text-emerald-600 shrink-0" aria-hidden="true" />
+                      <span className="truncate">siteworthy.demo/{project.id}</span>
+                    </div>
+
                     {/* Status Badge */}
-                    <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-white text-brand-navy/70 border border-slate-200 shadow-sm">
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-brand-navy/70 border border-slate-200 shadow-2xs shrink-0">
                       {project.status === "placeholder" ? "Preview Demonstrasi" : "Live Website"}
                     </span>
                   </div>
 
-                  {/* Visual Center Placeholder Graphic */}
-                  <div className="flex-1 flex flex-col items-center justify-center text-center p-3">
-                    <div className="w-12 h-12 rounded-xl bg-white shadow-sm border border-slate-200/70 flex items-center justify-center text-brand-blue mb-2 group-hover:scale-105 transition-transform">
-                      <Layers className="w-6 h-6" aria-hidden="true" />
+                  {/* Browser Body / Realistic Wireframe Canvas */}
+                  <div className="p-3.5 flex-1 flex flex-col justify-between bg-slate-50/70 select-none">
+                    {/* Simulated Mini Nav */}
+                    <div className="flex items-center justify-between pb-2 border-b border-slate-200/60">
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-4 h-4 rounded bg-brand-blue flex items-center justify-center text-white text-[8px] font-bold">
+                          {project.id === "project-1" && <Utensils className="w-2.5 h-2.5" />}
+                          {project.id === "project-2" && <Store className="w-2.5 h-2.5" />}
+                          {project.id === "project-3" && <Stethoscope className="w-2.5 h-2.5" />}
+                        </div>
+                        <span className="text-[10px] font-bold text-slate-700 truncate max-w-[120px]">
+                          {project.name}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <span className="w-6 h-1.5 rounded-full bg-slate-200" />
+                        <span className="w-6 h-1.5 rounded-full bg-slate-200" />
+                      </div>
                     </div>
-                    <span className="text-xs font-semibold text-brand-navy">{project.name}</span>
-                    <span className="text-[11px] text-slate-500">Mockup Konsep Visual</span>
+
+                    {/* Simulated Hero Banner Area */}
+                    <div className="my-2 p-2.5 rounded-md bg-white border border-slate-200/70 shadow-2xs">
+                      <div className="w-3/4 h-2 rounded bg-slate-700 mb-1.5" />
+                      <div className="w-1/2 h-1.5 rounded bg-slate-300 mb-2" />
+                      <div className="flex items-center gap-1.5">
+                        <span className="px-2 py-0.5 rounded text-[8px] font-bold bg-brand-blue text-white">
+                          Pesan Online
+                        </span>
+                        <span className="px-2 py-0.5 rounded text-[8px] font-medium bg-slate-100 text-slate-600 border border-slate-200">
+                          Detail Info
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Simulated Content Grid Cards */}
+                    <div className="grid grid-cols-2 gap-2">
+                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-2xs">
+                        <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
+                          {project.id === "project-1" ? "🍛 Menu 01" : project.id === "project-2" ? "🎨 Motif 01" : "👨‍⚕️ Layanan 01"}
+                        </div>
+                        <div className="w-2/3 h-1.5 rounded bg-slate-300" />
+                      </div>
+                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-2xs">
+                        <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
+                          {project.id === "project-1" ? "🥤 Menu 02" : project.id === "project-2" ? "🎨 Motif 02" : "👨‍⚕️ Layanan 02"}
+                        </div>
+                        <div className="w-2/3 h-1.5 rounded bg-slate-300" />
+                      </div>
+                    </div>
                   </div>
 
-                  {/* Browser Footer Line */}
-                  <div className="w-full bg-slate-200/70 h-1.5 rounded-full" />
+                  {/* ── Hover Reveal Overlay (Smooth Blur & Quick Action) ── */}
+                  <a
+                    href={`${contactConfig.whatsapp.url}?text=Halo%20Siteworthy,%20saya%20tertarik%20dengan%20konsep%20demo%20${encodeURIComponent(project.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 bg-brand-navy/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-4 z-20 text-center"
+                    aria-label={`Konsultasikan rancangan website mirip ${project.name}`}
+                  >
+                    <span className="inline-flex items-center gap-2 bg-white text-brand-navy px-4 py-2 rounded-full font-semibold text-xs shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                      <span>Konsultasi Konsep Serupa</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-brand-blue" aria-hidden="true" />
+                    </span>
+                    <span className="text-[11px] text-slate-300 mt-2 font-medium">
+                      Bahas arsitektur & fitur via WhatsApp
+                    </span>
+                  </a>
                 </div>
 
-                {/* Content Section */}
+                {/* ── Content Section ───────────────────────────── */}
                 <div className="p-6">
                   {/* Category Pill */}
                   <span className="text-xs font-semibold text-brand-blue uppercase tracking-wider block mb-2">
@@ -76,21 +149,39 @@ export default function Portfolio() {
                   </p>
 
                   {/* Feature Tags */}
-                  <div className="flex flex-wrap gap-1.5 mb-2">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {project.features.map((feature) => (
                       <span
                         key={feature}
-                        className="text-[11px] font-medium bg-brand-gray text-slate-700 px-2.5 py-1 rounded-md border border-slate-200/60"
+                        className="text-[11px] font-medium bg-brand-gray text-slate-700 px-2.5 py-1 rounded-md border border-slate-200/70"
                       >
                         {feature}
                       </span>
                     ))}
                   </div>
+
+                  {/* Tech Stack Pills (Interactive Polish) */}
+                  {project.techStack && (
+                    <div className="pt-3 border-t border-slate-100 flex flex-wrap items-center gap-1.5">
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">
+                        <Code2 className="w-3 h-3 text-brand-blue" aria-hidden="true" />
+                        Stack:
+                      </span>
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="text-[10px] font-semibold px-2 py-0.5 rounded bg-blue-50 text-brand-blue border border-blue-200/50"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
 
-              {/* Card Footer: Action Button */}
-              <div className="px-6 pb-6 pt-2 border-t border-slate-100 mt-2">
+              {/* ── Card Footer: Action Button ─────────────────── */}
+              <div className="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between">
                 {project.demoUrl !== "#" ? (
                   <a
                     href={project.demoUrl}
@@ -102,18 +193,28 @@ export default function Portfolio() {
                     <ExternalLink className="w-4 h-4" aria-hidden="true" />
                   </a>
                 ) : (
-                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500">
                     <Sparkles className="w-3.5 h-3.5 text-amber-500" aria-hidden="true" />
-                    Tersedia saat konsultasi proyek
+                    <span>Tersedia saat konsultasi</span>
                   </span>
                 )}
+
+                <a
+                  href={`${contactConfig.whatsapp.url}?text=Halo%20Siteworthy,%20saya%20ingin%20tanya%20mengenai%20${encodeURIComponent(project.name)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-brand-blue hover:text-blue-700 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Tanya Proyek</span>
+                  <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                </a>
               </div>
             </article>
           ))}
         </div>
 
         {/* ── Custom Demo Consultation Note ──────────────── */}
-        <div className="mt-14 bg-brand-gray rounded-card p-6 md:p-8 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div className="mt-14 bg-brand-gray rounded-card p-6 md:p-8 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-2xs">
           <div className="space-y-1">
             <h4 className="font-heading font-bold text-lg text-brand-navy">
               Punya konsep atau bidang usaha yang spesifik?
@@ -127,7 +228,7 @@ export default function Portfolio() {
             href={contactConfig.whatsapp.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary text-small shrink-0 whitespace-nowrap"
+            className="btn-primary text-small shrink-0 whitespace-nowrap shadow-md hover:shadow-lg transition-all"
           >
             Diskusikan Ide Website
           </a>
