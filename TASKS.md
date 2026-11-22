@@ -161,8 +161,8 @@ Milestone ini ditujukan untuk meningkatkan daya tarik visual website agar lebih 
 - [x] Tambahkan efek *hover reveal* yang halus pada gambar preview.
 
 ### **Tahap 4 – Timeline Proses & Micro-Interactions**
-- [ ] Berikan sentuhan aksen visual yang lebih menonjol pada timeline tahapan pengerjaan (nomor step `01`-`05` dengan typography aksen besar dan garis konektor vertikal/horizontal yang dinamis).
-- [ ] Tambahkan *active step hover state* yang memperjelas alur kerja dari Consultation hingga Launch.
+- [x] Berikan sentuhan aksen visual yang lebih menonjol pada timeline tahapan pengerjaan (nomor step `01`-`05` dengan typography aksen besar dan garis konektor vertikal/horizontal yang dinamis).
+- [x] Tambahkan *active step hover state* yang memperjelas alur kerja dari Consultation hingga Launch.
 
 ### **Tahap 5 – Polish Interaksi Global & Tombol**
 - [ ] Berikan efek hover dengan *subtle blue glow shadow* pada tombol CTA utama (`.btn-primary`).
