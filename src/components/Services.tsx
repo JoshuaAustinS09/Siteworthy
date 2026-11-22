@@ -143,7 +143,7 @@ export default function Services() {
                       <Icon className="w-6 h-6 transition-transform group-hover:scale-110" aria-hidden="true" />
                     </div>
                     <span
-                      className={`text-xs font-semibold px-3 py-1 rounded-full border shadow-2xs ${service.badgeColor}`}
+                      className={`text-xs font-semibold px-3 py-1 rounded-full border shadow-sm ${service.badgeColor}`}
                     >
                       {service.badge}
                     </span>

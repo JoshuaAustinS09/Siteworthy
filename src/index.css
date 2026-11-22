@@ -113,20 +113,22 @@
     @apply inline-flex items-center justify-center gap-2
            bg-brand-blue text-white font-semibold font-body
            px-6 py-3 rounded-btn
-           hover:bg-blue-700 active:bg-blue-800
-           transition-colors
+           shadow-md shadow-brand-blue/25
+           hover:bg-blue-700 hover:shadow-xl hover:shadow-brand-blue/35 hover:-translate-y-0.5
+           active:bg-blue-800 active:translate-y-0 active:shadow-md
+           transition-all duration-200
            focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
   }
 
   /* ── Tombol Sekunder (Secondary / Outline) ──────── */
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2
-           bg-transparent text-brand-navy font-semibold font-body
+           bg-white text-brand-navy font-semibold font-body
            px-6 py-3 rounded-btn
-           border border-brand-navy/20
-           hover:border-brand-navy hover:bg-brand-gray
-           active:bg-gray-100
-           transition-colors
+           border border-slate-300
+           hover:border-brand-navy hover:bg-slate-50 hover:-translate-y-0.5 hover:shadow-sm
+           active:bg-gray-100 active:translate-y-0
+           transition-all duration-200
            focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue;
   }
 

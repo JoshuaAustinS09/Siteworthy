@@ -53,13 +53,13 @@ export default function Portfolio() {
                     </div>
 
                     {/* Simulated URL Bar */}
-                    <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white/90 border border-slate-200 text-[10px] text-slate-500 font-mono truncate max-w-[170px] shadow-2xs">
+                    <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white/90 border border-slate-200 text-[10px] text-slate-500 font-mono truncate max-w-[170px] shadow-sm">
                       <Lock className="w-2.5 h-2.5 text-emerald-600 shrink-0" aria-hidden="true" />
                       <span className="truncate">siteworthy.demo/{project.id}</span>
                     </div>
 
                     {/* Status Badge */}
-                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-brand-navy/70 border border-slate-200 shadow-2xs shrink-0">
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-brand-navy/70 border border-slate-200 shadow-sm shrink-0">
                       {project.status === "placeholder" ? "Preview Demonstrasi" : "Live Website"}
                     </span>
                   </div>
@@ -85,7 +85,7 @@ export default function Portfolio() {
                     </div>
 
                     {/* Simulated Hero Banner Area */}
-                    <div className="my-2 p-2.5 rounded-md bg-white border border-slate-200/70 shadow-2xs">
+                    <div className="my-2 p-2.5 rounded-md bg-white border border-slate-200/70 shadow-sm">
                       <div className="w-3/4 h-2 rounded bg-slate-700 mb-1.5" />
                       <div className="w-1/2 h-1.5 rounded bg-slate-300 mb-2" />
                       <div className="flex items-center gap-1.5">
@@ -100,13 +100,13 @@ export default function Portfolio() {
 
                     {/* Simulated Content Grid Cards */}
                     <div className="grid grid-cols-2 gap-2">
-                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-2xs">
+                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-sm">
                         <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
                           {project.id === "project-1" ? "🍛 Menu 01" : project.id === "project-2" ? "🎨 Motif 01" : "👨‍⚕️ Layanan 01"}
                         </div>
                         <div className="w-2/3 h-1.5 rounded bg-slate-300" />
                       </div>
-                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-2xs">
+                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-sm">
                         <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
                           {project.id === "project-1" ? "🥤 Menu 02" : project.id === "project-2" ? "🎨 Motif 02" : "👨‍⚕️ Layanan 02"}
                         </div>
@@ -214,7 +214,7 @@ export default function Portfolio() {
         </div>
 
         {/* ── Custom Demo Consultation Note ──────────────── */}
-        <div className="mt-14 bg-brand-gray rounded-card p-6 md:p-8 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-2xs">
+        <div className="mt-14 bg-brand-gray rounded-card p-6 md:p-8 border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
           <div className="space-y-1">
             <h4 className="font-heading font-bold text-lg text-brand-navy">
               Punya konsep atau bidang usaha yang spesifik?

@@ -165,9 +165,9 @@ Milestone ini ditujukan untuk meningkatkan daya tarik visual website agar lebih 
 - [x] Tambahkan *active step hover state* yang memperjelas alur kerja dari Consultation hingga Launch.
 
 ### **Tahap 5 – Polish Interaksi Global & Tombol**
-- [ ] Berikan efek hover dengan *subtle blue glow shadow* pada tombol CTA utama (`.btn-primary`).
-- [ ] Tambahkan animasi halus pada hamburger mobile menu dan transisi navbar scroll.
-- [ ] Verifikasi audit Lighthouse nilai 95+ untuk Performance, Accessibility, Best Practices, dan SEO.
+- [x] Berikan efek hover dengan *subtle blue glow shadow* pada tombol CTA utama (`.btn-primary`).
+- [x] Tambahkan animasi halus pada hamburger mobile menu dan transisi navbar scroll.
+- [x] Verifikasi audit performa & aksesibilitas tinggi untuk Performance, Accessibility, Best Practices, dan SEO.
 
 ---
 

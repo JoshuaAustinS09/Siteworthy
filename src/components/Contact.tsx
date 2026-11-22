@@ -111,6 +111,19 @@ export default function Contact() {
           </a>
         </div>
 
+        {/* ── Primary Direct Action Button ───────────────── */}
+        <div className="text-center mb-10">
+          <a
+            href={contactConfig.whatsapp.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-body px-8 py-4 shadow-md hover:shadow-xl transition-all inline-flex items-center gap-2"
+          >
+            <span>Mulai Konsultasi Gratis via WhatsApp</span>
+            <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </a>
+        </div>
+
         {/* ── Request a Quote Note (No Fake Pricing) ──────── */}
         <div className="max-w-2xl mx-auto text-center bg-white rounded-card p-6 border border-slate-200 shadow-sm">
           <div className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 mb-2">

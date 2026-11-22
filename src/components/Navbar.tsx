@@ -139,13 +139,15 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen((prev) => !prev)}
             type="button"
-            className="md:hidden p-2 rounded-btn text-brand-navy hover:bg-brand-gray focus-visible:outline-2 focus-visible:outline-brand-blue transition-colors"
+            className="md:hidden p-2 rounded-btn text-brand-navy hover:bg-brand-gray focus-visible:outline-2 focus-visible:outline-brand-blue transition-all"
             aria-label={isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
             aria-expanded={isOpen}
             aria-controls="mobile-navigation-menu"
           >
             <svg
-              className="w-6 h-6 transition-transform duration-200"
+              className={`w-6 h-6 transition-transform duration-300 ease-out transform ${
+                isOpen ? "rotate-90" : "rotate-0"
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

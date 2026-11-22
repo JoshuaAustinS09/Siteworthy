@@ -70,20 +70,28 @@ export default function WhyChoose() {
             return (
               <div
                 key={prop.id}
-                className="bg-white rounded-card p-7 md:p-8 border border-slate-200/80 shadow-card hover:border-brand-blue/30 transition-all duration-200 relative overflow-hidden"
+                className="group relative bg-white rounded-card p-7 md:p-8 border border-slate-200/90 shadow-card hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 overflow-hidden"
               >
-                {/* Visual Step Number Accent */}
-                <span className="absolute top-6 right-7 text-4xl font-heading font-extrabold text-slate-100 select-none pointer-events-none">
+                {/* Top Hover Accent Bar */}
+                <div
+                  className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-blue to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  aria-hidden="true"
+                />
+
+                {/* Visual Step Number Watermark Accent */}
+                <span className="absolute top-5 right-6 text-4xl font-heading font-black text-slate-100 group-hover:text-blue-100/70 group-hover:scale-105 transition-all duration-300 select-none pointer-events-none">
                   0{idx + 1}
                 </span>
 
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-lg bg-brand-blue/10 flex items-center justify-center text-brand-blue shrink-0">
-                    <Icon className="w-6 h-6" aria-hidden="true" />
+                <div className="flex items-start gap-5 relative z-10">
+                  <div className="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue group-hover:bg-brand-blue group-hover:text-white flex items-center justify-center shrink-0 transition-all duration-300 shadow-sm">
+                    <Icon className="w-6 h-6 transition-transform group-hover:scale-110" aria-hidden="true" />
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-xl font-heading font-bold text-brand-navy">{prop.title}</h3>
+                    <h3 className="text-xl font-heading font-bold text-brand-navy group-hover:text-brand-blue transition-colors">
+                      {prop.title}
+                    </h3>
                     <p className="text-xs font-semibold text-brand-blue tracking-wide uppercase">
                       {prop.subtitle}
                     </p>
