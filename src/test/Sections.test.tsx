@@ -26,7 +26,7 @@ describe("Services Component", () => {
 describe("Portfolio Component", () => {
   it("memuat dan merender proyek portofolio dari data JSON", () => {
     render(<Portfolio />);
-    expect(screen.getAllByText("Warung Makan Sejahtera").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("Maison Kitchen").length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText("Batik Tradisi Semarang").length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText("Klinik Pratama Sehat Bersama").length).toBeGreaterThanOrEqual(1);
   });

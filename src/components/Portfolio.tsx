@@ -3,7 +3,6 @@ import {
   Sparkles,
   Lock,
   ArrowRight,
-  Utensils,
   Store,
   Stethoscope,
   Code2,
@@ -23,13 +22,12 @@ export default function Portfolio() {
       <div className="section-inner">
         {/* ── Section Header ─────────────────────────────── */}
         <div className="text-center max-w-2xl mx-auto mb-14 md:mb-16">
-          <span className="section-label">Selected Works</span>
+          <span className="section-label">Demo Works</span>
           <h2 id="portfolio-heading" className="section-title">
             Studi Kasus & Demonstrasi Website
           </h2>
           <p className="section-desc">
-            Contoh struktur dan tata letak website yang dirancang untuk memberikan pengalaman
-            terbaik bagi pengunjung dan memaksimalkan kepercayaan pelanggan.
+            Koleksi demonstrasi website interaktif dan konsep desain yang dirancang khusus untuk memperlihatkan standar kualitas, kecepatan, dan kenyamanan pengguna.
           </p>
         </div>
 
@@ -59,76 +57,110 @@ export default function Portfolio() {
                     </div>
 
                     {/* Status Badge */}
-                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-white text-brand-navy/70 border border-slate-200 shadow-sm shrink-0">
-                      {project.status === "placeholder" ? "Preview Demonstrasi" : "Live Website"}
+                    <span
+                      className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border shadow-sm shrink-0 ${
+                        project.status === "live"
+                          ? "bg-emerald-50 text-emerald-700 border-emerald-200"
+                          : "bg-white text-brand-navy/70 border-slate-200"
+                      }`}
+                    >
+                      {project.status === "live" ? "Live Demo" : "Preview Demonstrasi"}
                     </span>
                   </div>
 
-                  {/* Browser Body / Realistic Wireframe Canvas */}
-                  <div className="p-3.5 flex-1 flex flex-col justify-between bg-slate-50/70 select-none">
-                    {/* Simulated Mini Nav */}
-                    <div className="flex items-center justify-between pb-2 border-b border-slate-200/60">
-                      <div className="flex items-center gap-1.5">
-                        <div className="w-4 h-4 rounded bg-brand-blue flex items-center justify-center text-white text-[8px] font-bold">
-                          {project.id === "project-1" && <Utensils className="w-2.5 h-2.5" />}
-                          {project.id === "project-2" && <Store className="w-2.5 h-2.5" />}
-                          {project.id === "project-3" && <Stethoscope className="w-2.5 h-2.5" />}
-                        </div>
-                        <span className="text-[10px] font-bold text-slate-700 truncate max-w-[120px]">
-                          {project.name}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <span className="w-6 h-1.5 rounded-full bg-slate-200" />
-                        <span className="w-6 h-1.5 rounded-full bg-slate-200" />
-                      </div>
+                  {/* Browser Body: Real Screenshot Preview or Realistic Wireframe Canvas */}
+                  {project.image && !project.image.endsWith(".svg") ? (
+                    <div className="relative flex-1 overflow-hidden bg-slate-100 flex items-center justify-center">
+                      <img
+                        src={project.image}
+                        alt={`Tangkapan layar demo website ${project.name}`}
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
                     </div>
+                  ) : (
+                    <div className="p-3.5 flex-1 flex flex-col justify-between bg-slate-50/70 select-none">
+                      {/* Simulated Mini Nav */}
+                      <div className="flex items-center justify-between pb-2 border-b border-slate-200/60">
+                        <div className="flex items-center gap-1.5">
+                          <div className="w-4 h-4 rounded bg-brand-blue flex items-center justify-center text-white text-[8px] font-bold">
+                            {project.id === "project-2" && <Store className="w-2.5 h-2.5" />}
+                            {project.id === "project-3" && <Stethoscope className="w-2.5 h-2.5" />}
+                          </div>
+                          <span className="text-[10px] font-bold text-slate-700 truncate max-w-[120px]">
+                            {project.name}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span className="w-6 h-1.5 rounded-full bg-slate-200" />
+                          <span className="w-6 h-1.5 rounded-full bg-slate-200" />
+                        </div>
+                      </div>
 
-                    {/* Simulated Hero Banner Area */}
-                    <div className="my-2 p-2.5 rounded-md bg-white border border-slate-200/70 shadow-sm">
-                      <div className="w-3/4 h-2 rounded bg-slate-700 mb-1.5" />
-                      <div className="w-1/2 h-1.5 rounded bg-slate-300 mb-2" />
-                      <div className="flex items-center gap-1.5">
-                        <span className="px-2 py-0.5 rounded text-[8px] font-bold bg-brand-blue text-white">
-                          Pesan Online
-                        </span>
-                        <span className="px-2 py-0.5 rounded text-[8px] font-medium bg-slate-100 text-slate-600 border border-slate-200">
-                          Detail Info
-                        </span>
+                      {/* Simulated Hero Banner Area */}
+                      <div className="my-2 p-2.5 rounded-md bg-white border border-slate-200/70 shadow-sm">
+                        <div className="w-3/4 h-2 rounded bg-slate-700 mb-1.5" />
+                        <div className="w-1/2 h-1.5 rounded bg-slate-300 mb-2" />
+                        <div className="flex items-center gap-1.5">
+                          <span className="px-2 py-0.5 rounded text-[8px] font-bold bg-brand-blue text-white">
+                            Lihat Profil
+                          </span>
+                          <span className="px-2 py-0.5 rounded text-[8px] font-medium bg-slate-100 text-slate-600 border border-slate-200">
+                            Detail Info
+                          </span>
+                        </div>
                       </div>
-                    </div>
 
-                    {/* Simulated Content Grid Cards */}
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-sm">
-                        <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
-                          {project.id === "project-1" ? "🍛 Menu 01" : project.id === "project-2" ? "🎨 Motif 01" : "👨‍⚕️ Layanan 01"}
+                      {/* Simulated Content Grid Cards */}
+                      <div className="grid grid-cols-2 gap-2">
+                        <div className="p-2 rounded bg-white border border-slate-200/60 shadow-sm">
+                          <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
+                            {project.id === "project-2" ? "🎨 Motif 01" : "👨‍⚕️ Layanan 01"}
+                          </div>
+                          <div className="w-2/3 h-1.5 rounded bg-slate-300" />
                         </div>
-                        <div className="w-2/3 h-1.5 rounded bg-slate-300" />
-                      </div>
-                      <div className="p-2 rounded bg-white border border-slate-200/60 shadow-sm">
-                        <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
-                          {project.id === "project-1" ? "🥤 Menu 02" : project.id === "project-2" ? "🎨 Motif 02" : "👨‍⚕️ Layanan 02"}
+                        <div className="p-2 rounded bg-white border border-slate-200/60 shadow-sm">
+                          <div className="w-full h-8 rounded bg-slate-100 mb-1 flex items-center justify-center text-[9px] text-slate-400">
+                            {project.id === "project-2" ? "🎨 Motif 02" : "👨‍⚕️ Layanan 02"}
+                          </div>
+                          <div className="w-2/3 h-1.5 rounded bg-slate-300" />
                         </div>
-                        <div className="w-2/3 h-1.5 rounded bg-slate-300" />
                       </div>
                     </div>
-                  </div>
+                  )}
 
                   {/* ── Hover Reveal Overlay (Smooth Blur & Quick Action) ── */}
                   <a
-                    href={`${contactConfig.whatsapp.url}?text=Halo%20Siteworthy,%20saya%20tertarik%20dengan%20konsep%20demo%20${encodeURIComponent(project.name)}`}
+                    href={
+                      project.demoUrl && project.demoUrl !== "#"
+                        ? project.demoUrl
+                        : `${contactConfig.whatsapp.url}?text=Halo%20Siteworthy,%20saya%20tertarik%20dengan%20konsep%20demo%20${encodeURIComponent(project.name)}`
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute inset-0 bg-brand-navy/75 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-4 z-20 text-center"
-                    aria-label={`Konsultasikan rancangan website mirip ${project.name}`}
+                    aria-label={
+                      project.demoUrl && project.demoUrl !== "#"
+                        ? `Buka demo live ${project.name}`
+                        : `Konsultasikan rancangan website mirip ${project.name}`
+                    }
                   >
-                    <span className="inline-flex items-center gap-2 bg-white text-brand-navy px-4 py-2 rounded-full font-semibold text-xs shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                      <span>Konsultasi Konsep Serupa</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-brand-blue" aria-hidden="true" />
+                    <span className="inline-flex items-center gap-2 bg-white text-brand-navy px-4 py-2 rounded-full font-semibold text-xs shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 hover:bg-brand-blue hover:text-white">
+                      <span>
+                        {project.demoUrl && project.demoUrl !== "#"
+                          ? "Buka Demo Website"
+                          : "Konsultasi Konsep Serupa"}
+                      </span>
+                      {project.demoUrl && project.demoUrl !== "#" ? (
+                        <ExternalLink className="w-3.5 h-3.5 text-current" aria-hidden="true" />
+                      ) : (
+                        <ArrowRight className="w-3.5 h-3.5 text-current" aria-hidden="true" />
+                      )}
                     </span>
                     <span className="text-[11px] text-slate-300 mt-2 font-medium">
-                      Bahas arsitektur & fitur via WhatsApp
+                      {project.demoUrl && project.demoUrl !== "#"
+                        ? "Kunjungi website demo interaktif"
+                        : "Bahas arsitektur & fitur via WhatsApp"}
                     </span>
                   </a>
                 </div>
@@ -182,15 +214,15 @@ export default function Portfolio() {
 
               {/* ── Card Footer: Action Button ─────────────────── */}
               <div className="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between">
-                {project.demoUrl !== "#" ? (
+                {project.demoUrl && project.demoUrl !== "#" ? (
                   <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-small font-semibold text-brand-blue hover:text-blue-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-small font-semibold text-brand-blue hover:text-blue-700 transition-colors group/link"
                   >
-                    <span>Buka Live Demo</span>
-                    <ExternalLink className="w-4 h-4" aria-hidden="true" />
+                    <span>Buka Demo Website</span>
+                    <ExternalLink className="w-4 h-4 transition-transform group-hover/link:translate-x-0.5" aria-hidden="true" />
                   </a>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500">

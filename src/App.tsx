@@ -33,7 +33,7 @@ export default function App() {
         {/* SECTION 02: SERVICES */}
         <Services />
 
-        {/* SECTION 03: SELECTED WORKS / PORTFOLIO */}
+        {/* SECTION 03: DEMO WORKS / PORTOFOLIO */}
         <Portfolio />
 
         {/* SECTION 04: WHY CHOOSE SITEWORTHY */}

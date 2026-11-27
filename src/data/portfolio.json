@@ -1,19 +1,21 @@
 [
   {
-    "id": "project-1",
-    "name": "Warung Makan Sejahtera",
+    "id": "maison-kitchen",
+    "name": "Maison Kitchen",
     "category": "Business Website",
-    "description": "Website operasional untuk usaha kuliner dengan integrasi katalog menu digital, lokasi Google Maps, dan tombol pemesanan WhatsApp langsung.",
+    "description": "Website restoran modern dengan desain elegan yang menghadirkan katalog menu digital interaktif, informasi restoran, promo spesial, dan sistem pemesanan praktis melalui WhatsApp.",
     "features": [
-      "Menu Digital Interaktif",
-      "Pemesanan Cepat via WhatsApp",
-      "Peta Lokasi Google Maps",
+      "Katalog Menu Digital Interaktif",
+      "Shopping Cart & Pemesanan WhatsApp",
+      "Filter Kategori Makanan",
+      "Informasi Lokasi & Jam Operasional",
+      "Promo dan Menu Unggulan",
       "Desain Responsif Mobile-First"
     ],
-    "techStack": ["React", "Tailwind CSS", "WhatsApp API", "Mobile-First"],
-    "image": "/placeholder-project-1.svg",
-    "demoUrl": "#",
-    "status": "placeholder"
+    "techStack": ["HTML5", "Tailwind CSS", "JavaScript", "WhatsApp Click to Chat", "Mobile-First"],
+    "image": "./Demo1.png",
+    "demoUrl": "https://joshuaaustins09.github.io/Demo1/",
+    "status": "live"
   },
   {
     "id": "project-2",
